@@ -11,51 +11,11 @@ const service = new AssistantV2({
 
 const assistantId = '05ded7e0-0248-4b20-9cb1-2003ec2adb0c';
 
-const processResponse = (response, sessionId) => {
-  if (response.output.generic) {
-    if (response.output.generic.length > 0) {
-      if (response.output.generic[0].response_type === 'text') {
-        console.log(response.output.generic[0].text);
-      }
-    }
-  }
-
-  service.deleteSession({
-    assistantId,
-    sessionId,
-  }).catch((err) => {
+const session = () => service.createSession({ assistantId })
+  .then((res) => res.result.session_id)
+  .catch((err) => {
     console.log(err);
   });
-};
-
-const sendMessage = (messageInput, sessionId) => {
-  service
-    .message({
-      assistantId,
-      sessionId,
-      input: messageInput,
-    })
-    .then((res) => {
-      processResponse(res.result, sessionId);
-    }).catch((err) => {
-      console.log(err);
-    });
-};
-
-const session = () => {
-  service.createSession({
-    assistantId,
-  }).then((res) => {
-    const sessionId = res.result.session_id;
-
-    sendMessage({
-      messageType: 'text',
-      text: 'test',
-    }, sessionId);
-  }).catch((err) => {
-    console.log(err);
-  });
-};
 
 const message = (text, sessionId) => {
   const payload = {
@@ -71,6 +31,7 @@ const message = (text, sessionId) => {
     service.message(payload, (err, data) => {
       if (err) {
         console.error('Failed to send message to Watson Assistant');
+        console.error(err);
         reject(err);
       } else {
         resolve(data.result.output);

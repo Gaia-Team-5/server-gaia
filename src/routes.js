@@ -7,13 +7,15 @@ const route = Express.Router();
 route.get('/', (request, response) => response.json({ message: 'Hello World!' }));
 
 route.get('/conversation/:text*?', (request, response) => {
-    const { text } = request.params;
+  const { text } = request.params;
 
-    const sessionId = assistant.session();
+  const sessionId = assistant.session()
+    .then((sessionid) => sessionid)
+    .catch((err) => console.log(err));
 
-    assistant.message(text, sessionId)
-        .then(result => response.json({ assistant: result }))
-        .catch(err => response.json({ error: err }));
+  assistant.message(text, sessionId)
+    .then((result) => response.json({ assistant: result }))
+    .catch((err) => response.json({ error: err }));
 });
 
 module.exports = route;
