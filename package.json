@@ -5,10 +5,17 @@
   "repository": "https://github.com/Team-5-GaIA/server-GaIA.git",
   "author": "João Eliandro <eliandrogermano@gmail.com>",
   "license": "MIT",
+  "scripts": {
+      "start": "node src/server.js",
+      "dev": "nodemon src/server.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "nodemon": "^2.0.4"
   }
 }
