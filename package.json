@@ -1,0 +1,14 @@
+{
+  "name": "server-GaIA",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Team-5-GaIA/server-GaIA.git",
+  "author": "João Eliandro <eliandrogermano@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
