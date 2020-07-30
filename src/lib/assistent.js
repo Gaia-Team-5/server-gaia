@@ -11,11 +11,17 @@ const service = new AssistantV2({
 
 const assistantId = '05ded7e0-0248-4b20-9cb1-2003ec2adb0c';
 
-const session = () => service.createSession({ assistantId })
-  .then((res) => res.result.session_id)
-  .catch((err) => {
-    console.log(err);
-  });
+const session = async () => {
+  try {
+    const response = await service.createSession({
+      assistantId,
+    });
+
+    return response.result.session_id;
+  } catch (err) {
+    return err;
+  }
+};
 
 const message = (text, sessionId) => {
   const payload = {
