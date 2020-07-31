@@ -28,7 +28,9 @@
     <img alt="Repository issues" src="https://img.shields.io/github/issues/Team-5-GaIA/server-GaIA.svg">
   </a>
 
-  <img alt="GitHub License" src="https://img.shields.io/github/license/Team-5-GaIA/server-GaIA.svg">
+  <a href="https://github.com/Team-5-GaIA/server-GaIA/blob/master/LICENSE">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/Team-5-GaIA/server-GaIA.svg">
+  </a>
 </p>
 
 <p align="center">
