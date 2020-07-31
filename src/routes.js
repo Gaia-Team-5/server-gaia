@@ -20,6 +20,28 @@ route.get('/get-cases', (request, response) => {
   }
 });
 
+route.get('/get-case/:id', (request, response) => {
+  const { id } = request.params;
+
+  try {
+    const json = fs.readFileSync(situationJson);
+
+    const data = JSON.parse(json);
+
+    let theCase;
+
+    data.forEach((emergencyCase) => {
+      if (emergencyCase.id == id) {
+        theCase = emergencyCase;
+      }
+    });
+
+    return response.json(theCase);
+  } catch (error) {
+    return response.send(error);
+  }
+});
+
 route.get('/conversation/:text*?', async (request, response) => {
   const { text } = request.params;
 
