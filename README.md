@@ -2,7 +2,7 @@
     <img alt="gaia" src="https://res.cloudinary.com/dy7l1wk3y/image/upload/v1595578141/Github_Explorer_y2p07w.gif" />
     <br>
     <br>
-    gaia
+    Gaia
     <br>
 </h1>
 
@@ -64,7 +64,7 @@ This project was developed at the [Team 5 - gaia](https://github.com/Team-5-GaIA
 
 > - [NodeJS](https://nodejs.org)
 > - [ExpressJS](https://expressjs.com/)
-> - [Watson Assistant](https://cloud.ibm.com/docs/assistant/getting-started.html#gettingstarted)
+> - [IBM Watson Assistant](https://cloud.ibm.com/docs/assistant/getting-started.html#gettingstarted)
 > - [VS Code](https://code.visualstudio.com/)
 > - And another bunch of packages...
 
