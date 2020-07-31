@@ -11,25 +11,25 @@
 </h4>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Team-5-GaIA/server-GaIA.svg">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gaia-Team-5/server-gaia.svg">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Team-5-GaIA/server-GaIA.svg">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Gaia-Team-5/server-gaia.svg">
 
-  <a href="https://www.codacy.com/app/Team-5-GaIA/server-GaIA?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Team-5-GaIA/server-GaIA&amp;utm_campaign=Badge_Grade">
+  <a href="https://www.codacy.com/app/Gaia-Team-5/server-gaia?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Gaia-Team-5/server-gaia&amp;utm_campaign=Badge_Grade">
     <img alt="Codacy grade" src="https://api.codacy.com/project/badge/Grade/691b85e51bf240b997ae6ff82ea41590">
   </a>
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Team-5-GaIA/server-GaIA.svg">
-  <a href="https://github.com/Team-5-GaIA/server-GaIA/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Team-5-GaIA/server-GaIA.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Gaia-Team-5/server-gaia.svg">
+  <a href="https://github.com/Gaia-Team-5/server-gaia/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Gaia-Team-5/server-gaia.svg">
   </a>
 
-  <a href="https://github.com/Team-5-GaIA/server-GaIA/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Team-5-GaIA/server-GaIA.svg">
+  <a href="https://github.com/Gaia-Team-5/server-gaia/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/Gaia-Team-5/server-gaia.svg">
   </a>
 
-  <a href="https://github.com/Team-5-GaIA/server-GaIA/blob/master/LICENSE">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/Team-5-GaIA/server-GaIA.svg">
+  <a href="https://github.com/Gaia-Team-5/server-gaia/blob/master/LICENSE">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/Gaia-Team-5/server-gaia.svg">
   </a>
 </p>
 
@@ -58,11 +58,11 @@
 
 ## :octocat: The Project
 
-You can verify in other repository with the front-end project. [Here](https://github.com/Team-5-GaIA/web-GaIA)
+You can verify in other repository with the front-end project. [Here](https://github.com/Gaia-Team-5/web-gaia)
 
 ## :rocket: Technologies
 
-This project was developed at the [Team 5 - gaia](https://github.com/Team-5-GaIA) with the following technologies:
+This project was developed at the [Team 5 - gaia](https://github.com/Gaia-Team-5) with the following technologies:
 
 > - [NodeJS](https://nodejs.org)
 > - [ExpressJS](https://expressjs.com/)
@@ -72,16 +72,16 @@ This project was developed at the [Team 5 - gaia](https://github.com/Team-5-GaIA
 
 ## :information_source: How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v12.18][nodejs] or higher + [Yarn v1.22][yarn] or higher installed on your computer and the [gaia](https://github.com/Team-5-GaIA/server-GaIA).
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v12.18][nodejs] or higher + [Yarn v1.22][yarn] or higher installed on your computer and the [gaia](https://github.com/Gaia-Team-5/server-gaia).
 
 From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Team-5-GaIA/server-GaIA.git
+$ git clone https://github.com/Gaia-Team-5/server-gaia.git
 
 # Go into the repository
-$ cd server-GaIA
+$ cd server-gaia
 
 # Install dependencies for the backend
 $ yarn
@@ -108,7 +108,7 @@ const assistantId = '[assistant id]';
 
 ## :memo: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/Team-5-GaIA/server-GaIA/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/Gaia-Team-5/server-gaia/blob/master/LICENSE) for more information.
 
 ---
 
