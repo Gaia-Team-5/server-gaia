@@ -1,10 +1,26 @@
 const Express = require('express');
+const path = require('path');
+const fs = require('fs');
 
 const assistant = require('./lib/assistent');
 
 const route = Express.Router();
 
-route.get('/', (request, response) => response.json({ message: 'Hello World!' }));
+const situation = [];
+const situationJson = path.resolve(__dirname, 'database', 'data.json');
+
+route.get('/', (request, response) => {
+  try {
+    const json = fs.readFileSync(situationJson);
+    const data = JSON.parse(json);
+
+    situation.push(data);
+
+    return response.json(data);
+  } catch (error) {
+    return response.send(error);
+  }
+});
 
 route.get('/conversation/:text*?', async (request, response) => {
   const { text } = request.params;
