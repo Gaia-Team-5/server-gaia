@@ -1,0 +1,32 @@
+{
+    "situation": {
+        "id": "1",
+        "category": {
+            "isolated": {
+                "description": "Family isolated at house, can't get out. Risk of water getting in."
+            },
+            "injured": {
+                "description": "The person has a fractured leg."
+            },
+            "death risk": {
+                "description": "serious"
+            },
+            "other": {
+                "description": "Loss of property due to flooding"
+            }
+        },
+        "risk": [
+            "medium",
+            "serious"
+        ],
+        "location": {
+            "latitude": 1234567,
+            "longitude": 7654321
+        },
+        "created_at": "20200731:02:40PM",
+        "status": [
+            "Pending",
+            "Ongoing"
+        ]
+    }
+}
