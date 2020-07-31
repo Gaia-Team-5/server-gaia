@@ -15,7 +15,7 @@
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Team-5-GaIA/server-GaIA.svg">
 
-  <a href="https://www.codacy.com/app/Team-5-GaIA/game-endless-runner?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Team-5-GaIA/server-GaIA&amp;utm_campaign=Badge_Grade">
+  <a href="https://www.codacy.com/app/Team-5-GaIA/server-GaIA?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Team-5-GaIA/server-GaIA&amp;utm_campaign=Badge_Grade">
     <img alt="Codacy grade" src="https://api.codacy.com/project/badge/Grade/691b85e51bf240b997ae6ff82ea41590">
   </a>
 
@@ -28,7 +28,7 @@
     <img alt="Repository issues" src="https://img.shields.io/github/issues/Team-5-GaIA/server-GaIA.svg">
   </a>
 
-
+  <img alt="GitHub License" src="https://img.shields.io/github/license/Team-5-GaIA/server-GaIA.svg">
 </p>
 
 <p align="center">
