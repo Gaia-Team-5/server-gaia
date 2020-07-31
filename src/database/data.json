@@ -1,0 +1,16 @@
+{
+    "situation": {
+        "id": "1",
+        "category": {
+            "title": "isolated",
+            "description": "Family isolated at house, can't get out. Risk of water getting in."
+        },
+        "risk": "serious",
+        "location": {
+            "latitude": 1234567,
+            "longitude": 7654321
+        },
+        "created_at": "20200731:02:40PM",
+        "status": "Pending"
+    }
+}
