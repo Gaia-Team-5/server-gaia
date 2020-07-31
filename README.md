@@ -44,9 +44,8 @@
 
 **Project to improve assistance and assistance to the population.**
 > **Gaia**, a system that serves the society of a certain region that is about to be affected by floods, requests quick help to civil defense informing their current situation, avoiding possible overloads in distress call centers as well. Also developed to assist the civil defense, the system also positions victims' data in real-time on a map and a Dashboard, classifying them by criticality to improve the performance of care and help the population. Here, it uses:
-> - Typescript and Javascript
+> - Javascript
 > - Node
-> - React
 > - Geolocation
 > - IBM Cloud
 > - IBM Watson Assistant
@@ -67,6 +66,7 @@ This project was developed at the [Team 5 - gaia](https://github.com/Gaia-Team-5
 > - [NodeJS](https://nodejs.org)
 > - [ExpressJS](https://expressjs.com/)
 > - [IBM Watson Assistant](https://cloud.ibm.com/docs/assistant/getting-started.html#gettingstarted)
+> - [IBM Natural Language Undestanding](https://cloud.ibm.com/docs/natural-language-understanding?topic=natural-language-understanding-getting-started)
 > - [VS Code](https://code.visualstudio.com/)
 > - And another bunch of packages...
 
