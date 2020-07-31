@@ -1,6 +1,6 @@
 [
    {
-        "id": "1",
+        "id": 1,
         "category": {
             "title": "isolated"
         },
@@ -14,7 +14,7 @@
         "status": "Pending"
     },
     {
-        "id": "2",
+        "id": 2,
         "category": {
             "title": "isolated"
         },
@@ -28,7 +28,7 @@
         "status": "Pending"
     },
     {
-        "id": "3",
+        "id": 3,
         "category": {
             "title": "isolated"
         },
@@ -42,7 +42,7 @@
         "status": "Pending"
     },
     {
-        "id": "4",
+        "id": 4,
         "category": {
             "title": "isolated"
         },
