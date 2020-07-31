@@ -1,16 +1,58 @@
-{
-    "situation": {
+[
+   {
         "id": "1",
         "category": {
-            "title": "isolated",
-            "description": "Family isolated at house, can't get out. Risk of water getting in."
+            "title": "isolated"
         },
-        "risk": "serious",
+        "gaia_report": "Family isolated at house, can't get out. Risk of water getting in.",
+        "risk": "medium",
         "location": {
-            "latitude": 1234567,
-            "longitude": 7654321
+            "latitude": -30.0502131,
+            "longitude": -51.2108403
         },
-        "created_at": "20200731:02:40PM",
+        "created_at": "2020-07-31T17:51:06-0300",
+        "status": "Pending"
+    },
+    {
+        "id": "2",
+        "category": {
+            "title": "isolated"
+        },
+        "gaia_report": "Person alone in car rooftop. Strong stream, iminent danger.",
+        "risk": "urgent",
+        "location": {
+            "latitude": -30.0446599,
+            "longitude": -51.2108403
+        },
+        "created_at": "2020-07-31T17:52:44-0300",
+        "status": "Pending"
+    },
+    {
+        "id": "3",
+        "category": {
+            "title": "isolated"
+        },
+        "gaia_report": "Family trying to save properties. Water rising.",
+        "risk": "urgent",
+        "location": {
+            "latitude": -30.0577908,
+            "longitude": -51.207673
+        },
+        "created_at": "2020-07-31T18:02:40-0300",
+        "status": "Pending"
+    },
+    {
+        "id": "4",
+        "category": {
+            "title": "isolated"
+        },
+        "gaia_report": "Person isolated in city street, strong water flow.",
+        "risk": "urgent",
+        "location": {
+            "latitude": -30.0505103,
+            "longitude": -51.2168569
+        },
+        "created_at": "2020-07-31T18:04:11-0300",
         "status": "Pending"
     }
-}
+]

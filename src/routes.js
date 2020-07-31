@@ -6,15 +6,13 @@ const assistant = require('./lib/assistent');
 
 const route = Express.Router();
 
-const situation = [];
 const situationJson = path.resolve(__dirname, 'database', 'data.json');
 
-route.get('/', (request, response) => {
+route.get('/get-cases', async (request, response) => {
   try {
-    const json = fs.readFileSync(situationJson);
-    const data = JSON.parse(json);
+    const json = await fs.readFileSync(situationJson);
 
-    situation.push(data);
+    const data = JSON.parse(json);
 
     return response.json(data);
   } catch (error) {
