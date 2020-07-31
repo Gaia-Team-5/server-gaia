@@ -2,21 +2,30 @@ const Express = require('express');
 const path = require('path');
 const fs = require('fs');
 
-const assistant = require('./lib/assistent');
+const assistant = require('./lib/Assistent');
+const NaturalLanguageUnderstanding = require('./lib/NaturalLanguageUnderstanding');
 
 const route = Express.Router();
 
 const situationJson = path.resolve(__dirname, 'database', 'data.json');
 
-route.get('/get-cases', (request, response) => {
+route.get('/get-cases', async (request, response) => {
   try {
     const json = fs.readFileSync(situationJson);
 
     const data = JSON.parse(json);
 
-    return response.json(data);
-  } catch (error) {
-    return response.send(error);
+    const { result } = await NaturalLanguageUnderstanding.processing(data[0].gaia_report);
+
+    const emotions = result.emotion.document.emotion;
+
+    const critic = (emotions.sadness + emotions.fear) / 2 > emotions.joy ? 'urgent' : 'medium';
+
+    const value = (emotions.sadness + emotions.fear) / 2;
+
+    return response.status(200).json({ respostaDoNLU: { critic, value }, data, result });
+  } catch (err) {
+    return response.status(400).json({ error: err });
   }
 });
 
@@ -31,7 +40,7 @@ route.get('/get-case/:id', (request, response) => {
     let theCase;
 
     data.forEach((emergencyCase) => {
-      if (emergencyCase.id == id) {
+      if (emergencyCase.id === id) {
         theCase = emergencyCase;
       }
     });
