@@ -8,9 +8,9 @@ const route = Express.Router();
 
 const situationJson = path.resolve(__dirname, 'database', 'data.json');
 
-route.get('/get-cases', async (request, response) => {
+route.get('/get-cases', (request, response) => {
   try {
-    const json = await fs.readFileSync(situationJson);
+    const json = fs.readFileSync(situationJson);
 
     const data = JSON.parse(json);
 
