@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="gaia" src="https://res.cloudinary.com/dy7l1wk3y/image/upload/v1595578141/Github_Explorer_y2p07w.gif" />
+    <img alt="gaia" src="https://res.cloudinary.com/dy7l1wk3y/image/upload/v1596217412/gaia_capa_Prancheta_1_bg0zbd.png" />
     <br>
     <br>
     Gaia
