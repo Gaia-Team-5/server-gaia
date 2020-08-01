@@ -30,7 +30,8 @@ const longitudes = [
   -51.1683772,
   -51.1978657,
   -51.2047012,
-
+  -51.2035148,
+  -51.1706808,
 ];
 
 route.post('/process-message', async (request, response) => {
