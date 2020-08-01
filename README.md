@@ -86,24 +86,15 @@ $ cd server-gaia
 # Install dependencies for the backend
 $ yarn
 
+# Create environment variables into server-gaia folder
+$ touch .env
+
+# put your credentials services into .env file and save
+# ps.: You can to see the .env.example file
+$ vim .env
+
 # Run the backend server
 $ yarn start
-```
-
-In assistant file put your credentials:
-
-```javascript
-...
-const service = new AssistantV2({
-  version: '[assistant version]',
-  authenticator: new IamAuthenticator({
-    apikey: '[assistant apikey]',
-  }),
-  url: '[assistant url]',
-});
-
-const assistantId = '[assistant id]';
-...
 ```
 
 ## :memo: License
