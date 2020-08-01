@@ -1,0 +1,15 @@
+{
+    "id": 1,
+    "category": {
+        "title": "isolated"
+    },
+    "gaia_report": "Family isolated at house, can't get out. Risk of water getting in.",
+    "risk": "medium",
+    "location": {
+        "latitude": -30.0502131,
+        "longitude": -51.2108403
+    },
+    "created_at": "2020-07-31T17:51:06-0300",
+    "status": "pending",
+    "action_taken": "No actions have been taken yet."
+}
