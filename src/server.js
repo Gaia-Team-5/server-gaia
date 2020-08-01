@@ -9,4 +9,4 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(Routes);
 
-app.listen(3333, () => console.log('🚀 Server started!'));
+app.listen(process.env.PORT || 3333, () => console.log('🚀 Server started!'));
