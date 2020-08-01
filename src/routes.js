@@ -11,6 +11,18 @@ const situationJson = path.resolve(__dirname, 'database', 'data.json');
 
 const incomingCases = [];
 
+const reports = [
+  "Family isolated at house, can't get out. Risk of water getting in.",
+  'Person alone in car rooftop. Strong stream, iminent danger.',
+  'Family trying to save properties. Water rising.',
+  'Person isolated in city street, strong water flow.',
+];
+
+const status = [
+  'ongoing',
+  'pending',
+];
+
 const latitudes = [
   -30.0502131,
   -30.0294223,
@@ -34,6 +46,8 @@ const longitudes = [
   -51.1706808,
 ];
 
+let i = 1;
+
 route.post('/process-message', async (request, response) => {
   const { message } = request.body;
 
@@ -44,27 +58,39 @@ route.post('/process-message', async (request, response) => {
 
     const criticalLevel = (emotions.sadness + emotions.fear) / 2 > emotions.joy ? 'urgent' : 'medium';
 
-    const randomIndex = (Math.random() * latitudes.lenght).toFixed();
+    const randomIndex = (Math.random() * latitudes.length - 1).toFixed();
+    const randomIndex2 = (Math.random() * longitudes.length - 1).toFixed();
+    const randomReport = (Math.random() * reports.length - 1).toFixed();
+    const randomStatus = (Math.random() * 2).toFixed();
+
+    console.log(`RANDOM${randomIndex}`);
+
+    const newLatitude = latitudes[randomIndex];
+    const newLongitude = longitudes[randomIndex2];
+    const newReport = reports[randomReport];
+    const newStatus = status[randomStatus];
 
     const newCase = {
-      id: 1,
+      id: i,
       category: {
         title: 'isolated',
       },
-      gaia_report: "Family isolated at house, can't get out. Risk of water getting in.",
+      gaia_report: newReport,
       risk: criticalLevel,
       location: {
-        latitude: -30.0502131,
-        longitude: -51.2108403,
+        latitude: newLatitude,
+        longitude: newLongitude,
       },
-      created_at: '2020-07-31T17:51:06-0300',
-      status: 'pending',
+      created_at: new Date().getDate(),
+      status: newStatus,
       action_taken: 'No actions have been taken yet.',
     };
 
     incomingCases.push(newCase);
 
-    return response.status(200).json({ criticalLevel });
+    i += 1;
+
+    return response.status(200).json(incomingCases);
   } catch (err) {
     return response.status(400).json({ error: err });
   }
